@@ -1,15 +1,15 @@
-import Link from 'next/link'
-import styles from './phone.module.css'
+import Link from 'next/link';
+import styles from './phone.module.css';
 
 const Phone = () => {
-	return (
-		<section className={styles.phone}>
-			<Link className={styles.phone_link} href='tel:+79031234567'>
-				+7 (903) 123-45-67
-			</Link>
-			<h2 className={styles.phone_link_text}>Whatsapp</h2>
-		</section>
-	)
-}
+  return (
+    <section className={styles.phone}>
+      <Link className={styles.phone_link} href="tel:+79039840153">
+        +7 (903) 984-01-53
+      </Link>
+      <h2 className={styles.phone_link_text}>Whatsapp, Telegram</h2>
+    </section>
+  );
+};
 
-export default Phone
+export default Phone;

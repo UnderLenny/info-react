@@ -1,10 +1,17 @@
 .rules {
-	display: flex;
-	justify-content: space-between;
-	padding: 0px 20px 20px 20px;
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px 0 20px;
 }
 
 .rules_text {
-	font-size: 30px;
-	text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.rules_text:hover {
+  color: rgba(243, 235, 243, 0.478);
+  transition: 0.5s;
 }

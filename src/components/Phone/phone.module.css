@@ -1,22 +1,23 @@
 .phone {
-	margin-top: 50px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .phone_link {
-	font-size: 50px;
-	font-weight: bold;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 .phone_link:hover {
-	color: rgba(243, 235, 243, 0.478);
+  color: rgba(243, 235, 243, 0.478);
+  transition: 0.5s;
 }
 
 .phone_link_text {
-	font-size: 45px;
-	font-weight: 600;
-	letter-spacing: 0.3rem;
+  font-size: 45px;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
 }

@@ -1,0 +1,13 @@
+.rules_section {
+  display: flex;
+  justify-content: center;
+}
+
+.rules {
+  text-align: left;
+  margin: 0 auto;
+}
+
+.rules_text {
+  font-size: 30px;
+}

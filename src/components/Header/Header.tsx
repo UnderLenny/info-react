@@ -15,7 +15,7 @@ const Header = () => {
 					height={400}
 				/>
 				<h1 className={styles.title}>Панорама</h1>
-				<p className={styles.header_text}>Гостевой дом</p>
+				<p className={styles.header_text}>Гостевой комплекс</p>
 			</Link>
 		</header>
 	)
