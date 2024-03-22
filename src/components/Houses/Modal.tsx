@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useState } from 'react';
 import styles from './modal.module.css';
 
@@ -5,7 +6,7 @@ interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
   title: string;
-  images: string[]; // Массив ссылок на изображения домов
+  images: string[];
   description: string;
 }
 
@@ -42,12 +43,26 @@ const Modal: React.FC<ModalProps> = ({
               alt={`House ${currentImageIndex + 1}`}
               className={styles.image}
             />
-            <button onClick={nextImage} className={styles.nextButton}>
-              Next
-            </button>
-            <button onClick={prevImage} className={styles.prevButton}>
-              Prev
-            </button>
+            <div className={styles.switcher}>
+              <button onClick={prevImage} className={styles.prevButton}>
+                <Image
+                  src={'/long-arrow-left-icon.svg'}
+                  alt={''}
+                  className={styles.scroll}
+                  width={70}
+                  height={70}
+                />
+              </button>
+              <button onClick={nextImage} className={styles.nextButton}>
+                <Image
+                  src={'/long-arrow-right-icon.svg'}
+                  alt={''}
+                  className={styles.scroll}
+                  width={70}
+                  height={70}
+                />
+              </button>
+            </div>
           </div>
           <div className={styles.descriptionContainer}>
             <h2>{title}</h2>

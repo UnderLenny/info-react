@@ -47,6 +47,11 @@
   flex: 1;
 }
 
+.switcher {
+  display: flex;
+  justify-content: center;
+}
+
 .image {
   width: 100%;
   height: auto;
@@ -55,4 +60,8 @@
 .descriptionContainer {
   flex: 1;
   padding: 20px;
+}
+
+.scroll {
+  padding: 5px;
 }

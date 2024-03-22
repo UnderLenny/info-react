@@ -72,21 +72,21 @@ const Houses = () => {
         isOpen={showFirstModal}
         onClose={() => setShowFirstModal(false)}
         title="Модальное окно для Дома 1"
-        images={['/house.jpg', '/head.png', '/house.jpg']}
+        images={['/house.jpg', '/house2.jpg', '/house.jpg']}
         description="Содержимое модального окна для Дома 1"
       />
       <Modal
         isOpen={showSecondModal}
         onClose={() => setShowSecondModal(false)}
         title="Модальное окно для Дома 2"
-        images={['/house.jpg', '/head.png', '/house.jpg']}
+        images={['/house.jpg', '/house2.jpg', '/house.jpg']}
         description="Содержимое модального окна для Дома 2"
       />
       <Modal
         isOpen={showThirdModal}
         onClose={() => setShowThirdModal(false)}
         title="Модальное окно для Дома 3"
-        images={['/house.jpg', '/head.png', '/house.jpg']}
+        images={['/house.jpg', '/house2.jpg', '/house.jpg']}
         description="Содержимое модального окна для Дома 3"
       />
     </section>
