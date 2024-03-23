@@ -1,3 +1,34 @@
+@media only screen and (max-width: 768px) {
+  .modal {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .modalContent {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .description_title {
+    font-size: 30px;
+  }
+
+  .description_paragraph {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .switcher {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .modalOverlay {
   position: fixed;
   top: 0;
@@ -48,6 +79,7 @@
 }
 
 .switcher {
+  padding-top: 20px;
   display: flex;
   justify-content: center;
 }
@@ -60,6 +92,17 @@
 .descriptionContainer {
   flex: 1;
   padding: 20px;
+}
+
+.description_title {
+  padding: 20px;
+  font-size: 45px;
+}
+
+.description_paragraph {
+  padding: 20px;
+  font-size: 25px;
+  width: 600px;
 }
 
 .scroll {

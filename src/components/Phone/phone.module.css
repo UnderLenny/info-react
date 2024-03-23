@@ -21,3 +21,14 @@
   font-weight: 600;
   letter-spacing: 0.3rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .phone_link {
+    font-size: 35px;
+  }
+
+  .phone_link_text {
+    font-size: 30px;
+    letter-spacing: 0.2rem;
+  }
+}

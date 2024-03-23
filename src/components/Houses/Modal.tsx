@@ -8,6 +8,7 @@ interface ModalProps {
   title: string;
   images: string[];
   description: string;
+  sub_description: string;
 }
 
 const Modal: React.FC<ModalProps> = ({
@@ -16,6 +17,7 @@ const Modal: React.FC<ModalProps> = ({
   title,
   images,
   description,
+  sub_description,
 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -65,8 +67,9 @@ const Modal: React.FC<ModalProps> = ({
             </div>
           </div>
           <div className={styles.descriptionContainer}>
-            <h2>{title}</h2>
-            <p>{description}</p>
+            <h2 className={styles.description_title}>{title}</h2>
+            <p className={styles.description_paragraph}>{description}</p>
+            <p className={styles.description_paragraph}>{sub_description}</p>
           </div>
         </div>
       </div>
