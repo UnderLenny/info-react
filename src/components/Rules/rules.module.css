@@ -15,3 +15,15 @@
   color: rgba(243, 235, 243, 0.478);
   transition: 0.5s;
 }
+
+@media (max-width: 768px) {
+  .rules_text {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .rules_text {
+    font-size: 30px;
+  }
+}

@@ -1,34 +1,3 @@
-@media only screen and (max-width: 768px) {
-  .modal {
-    max-width: 95%;
-    padding: 15px;
-  }
-
-  .modalContent {
-    flex-direction: column;
-  }
-
-  .image {
-    width: 100%;
-    height: auto;
-  }
-
-  .description_title {
-    font-size: 30px;
-  }
-
-  .description_paragraph {
-    font-size: 18px;
-    width: 100%;
-  }
-
-  .switcher {
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
-  }
-}
-
 .modalOverlay {
   position: fixed;
   top: 0;
@@ -44,8 +13,10 @@
 
 .modal {
   background-color: #fff;
-  max-width: 90%;
-  max-height: 90%;
+  width: 1200px; /* Фиксированная ширина */
+  height: 650px; /* Фиксированная высота */
+  max-width: 95vw; /* Максимальная ширина для мобильных устройств */
+  max-height: 95vh; /* Максимальная высота для мобильных устройств */
   overflow-y: auto;
   border-radius: 10px;
   padding: 20px;
@@ -53,58 +24,94 @@
   color: black;
 }
 
-.modalHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.modalHeader h2 {
-  margin: 0;
-}
-
 .modalContent {
   margin-bottom: 20px;
+  padding: 25px;
   display: flex;
 }
 
-.modalContent img {
-  max-width: 100%;
-  height: auto;
-}
-
-.imagesContainer {
+.imageContainer {
   flex: 1;
+  margin-right: 20px;
+  padding: 15px 80px 0 20px;
 }
 
-.switcher {
-  padding-top: 20px;
+.textContainer {
+  flex: 2;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .image {
   width: 100%;
   height: auto;
-}
-
-.descriptionContainer {
-  flex: 1;
-  padding: 20px;
+  max-width: 800px;
+  max-height: 700px;
+  min-width: 300px;
+  min-height: 400px;
+  object-fit: cover;
 }
 
 .description_title {
-  padding: 20px;
+  max-width: 550px;
   font-size: 45px;
 }
 
 .description_paragraph {
-  padding: 20px;
+  max-width: 550px;
   font-size: 25px;
-  width: 600px;
+  margin-bottom: 10px;
+}
+
+.switcher {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider {
+}
+
+.prevButton,
+.nextButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .scroll {
   padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .modal {
+    width: 95%; /* Изменение ширины на 95% для мобильных устройств */
+    height: auto; /* Автоматическая высота для мобильных устройств */
+    max-height: none; /* Удаление максимальной высоты */
+    padding: 15px;
+  }
+
+  .modalContent {
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 10px 10px 0 10px;
+  }
+
+  .description_title {
+    font-size: 30px;
+  }
+
+  .description_paragraph {
+    font-size: 18px;
+  }
+
+  .switcher {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+  }
 }

@@ -39,11 +39,14 @@ const Modal: React.FC<ModalProps> = ({
     <div className={styles.modalOverlay} onClick={onClose}>
       <div className={styles.modal} onClick={e => e.stopPropagation()}>
         <div className={styles.modalContent}>
-          <div className={styles.slider}>
-            <img
+          <div className={styles.imageContainer}>
+            <Image
               src={images[currentImageIndex]}
               alt={`House ${currentImageIndex + 1}`}
               className={styles.image}
+              layout="responsive"
+              width={400}
+              height={300}
             />
             <div className={styles.switcher}>
               <button onClick={prevImage} className={styles.prevButton}>
@@ -66,7 +69,7 @@ const Modal: React.FC<ModalProps> = ({
               </button>
             </div>
           </div>
-          <div className={styles.descriptionContainer}>
+          <div className={styles.textContainer}>
             <h2 className={styles.description_title}>{title}</h2>
             <p className={styles.description_paragraph}>{description}</p>
             <p className={styles.description_paragraph}>{sub_description}</p>
