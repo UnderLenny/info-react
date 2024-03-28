@@ -9,15 +9,16 @@
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  overflow: auto;
 }
 
 .modal {
   background-color: #fff;
-  width: 1200px; /* Фиксированная ширина */
-  height: 650px; /* Фиксированная высота */
-  max-width: 95vw; /* Максимальная ширина для мобильных устройств */
-  max-height: 95vh; /* Максимальная высота для мобильных устройств */
-  overflow-y: auto;
+  width: 1200px;
+  height: 650px;
+  max-width: 95vw;
+  max-height: 95vh;
+  overflow: hidden;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -28,6 +29,7 @@
   margin-bottom: 20px;
   padding: 25px;
   display: flex;
+  overflow-y: auto;
 }
 
 .imageContainer {
@@ -69,9 +71,6 @@
   justify-content: space-between;
 }
 
-.slider {
-}
-
 .prevButton,
 .nextButton {
   background: transparent;
@@ -85,20 +84,22 @@
 
 @media only screen and (max-width: 768px) {
   .modal {
-    width: 95%; /* Изменение ширины на 95% для мобильных устройств */
-    height: auto; /* Автоматическая высота для мобильных устройств */
-    max-height: none; /* Удаление максимальной высоты */
-    padding: 15px;
+    width: 90%;
+    height: auto;
+    max-height: none;
+    padding: 7px;
+    overflow-y: auto;
   }
 
   .modalContent {
     flex-direction: column;
+    overflow-y: auto;
   }
 
   .imageContainer {
     margin-right: 0;
     margin-bottom: 10px;
-    padding: 10px 10px 0 10px;
+    padding: 100px 10px 0 10px;
   }
 
   .description_title {

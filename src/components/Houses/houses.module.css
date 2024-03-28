@@ -34,3 +34,9 @@
   line-height: 1.5;
   max-width: 100%;
 }
+
+@media only screen and (max-width: 768px) {
+  .button_link {
+    max-width: 300px;
+  }
+}
